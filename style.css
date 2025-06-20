@@ -1,0 +1,17 @@
+body{
+    background-image:  url(img/Background.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#F6F8FC ;
+}
+.header{
+    display: flex;
+    margin-top: 43px;
+    margin-left: 51px
+}
+.Pokedex_logo_Big{
+    margin-top: 136px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
