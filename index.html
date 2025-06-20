@@ -11,6 +11,18 @@
         <a href="#">
         <img src="img/Pokedex_logo.png" alt="Pokedex_logo" width="192px" height="61px">
         </a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="mainMenu" class="hidden">
+    <a href="#">About</a>
+    <a href="#">Information</a>
+    <div class="submenu">
+      <span onclick="toggleSubmenu()">Appearance ▼</span>
+      <div id="appearanceOptions" class="hidden">
+      <button data-tema="white">White</button>
+      <button data-tema="red">Red</button>
+      </div>
+    </div>
+  </nav>
     </header>
     <hero class="hero">
         <div class="Pokedex_logo_Big">
@@ -22,5 +34,6 @@
     <section></section>
     </main>
     <footer></footer>
+    <script src="main.js"></script>
 </body>
 </html>
