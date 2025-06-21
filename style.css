@@ -65,3 +65,38 @@ nav.hidden {
 .submenu div.hidden {
   display: none;
 }
+
+.search_bar{
+    display: flex;
+    justify-content: center;
+    padding-top: 52px;
+}
+.search{
+    border: none;
+    border-radius: 10px;
+    height: 73px;
+    width: 1007px;
+    margin-right: 16px;
+    box-shadow: 0px 4px 18.5px 2px #00000040;
+    font-size: 20px;
+    padding-left: 16px;
+}
+.search::placeholder{
+    background-color: #FFFFFF;
+    color: #C9B3B3;
+}
+.text{
+    background-color: red;
+    color: #C9B3B3;
+}
+.btn_red{
+    display: flex;
+    justify-content: center;
+    background: #FF5350;
+    border-radius: 10px;
+    width: 81px;
+    height: 73px;
+}
+.btn_red img{
+    margin-top: 16px;
+}
