@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Kumbh+Sans:wght@100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-color:#F6F8FC ;
+    font-family: "Kumbh Sans", sans-serif;
 }
 .header{
     display: flex;
@@ -100,3 +103,213 @@ nav.hidden {
 .btn_red img{
     margin-top: 16px;
 }
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 1180px;
+    height: 680px;
+    margin: auto;
+    margin-top: 50px;
+    text-transform: uppercase;
+    align-content: space-between;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    margin: 0;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.tema-rojo .card {
+  background-color: #77B35B;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+.card-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+}
+
+.card-h2-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-h2-row h2 {
+    color: black;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.tema-rojo .card-h2-row h2{
+    color: white;
+}
+.card h3 {
+    display: flex;
+    color: black;
+    font-size: 18px;
+}
+
+.card h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.card h1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.tema-rojo .card h1 a{
+    color: white;
+}
+
+.card p {
+    color: black;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+}
+
+.card button {
+    padding: 8px 8px;
+    border-radius: 10px;
+    background-color: #BFC66B;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.card button a{
+    text-decoration: none;
+    color: black;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-left: 24px;
+    background: none;
+}
+
+
+.tema-rojo .card-h2-row h2 {
+  color: #fff;
+}
+.type-grass    { 
+    background: #78C850; 
+    color: #fff; 
+}
+.type-fire     { 
+    background: #F08030;
+    color: #fff; 
+    }
+.type-water    { 
+    background: #6890F0; 
+    color: #fff; 
+}
+.type-poison   { 
+    background: #A040A0;
+    color: #fff; 
+}
+.type-electric { 
+    background: #F8D030; 
+    color: #333; 
+}
+.type-bug      { 
+    background: #A8B820; 
+    color: #fff; 
+}
+.type-normal   { 
+    background: #A8A878; 
+    color: #fff; 
+}
+.type-flying   { 
+    background: #A890F0; 
+    color: #fff; 
+}
+.type-ground   { 
+    background: #E0C068; 
+    color: #fff; 
+}
+.type-fairy    { 
+    background: #EE99AC; 
+    color: #fff; 
+}
+.type-fighting { 
+    background: #C03028; 
+    color: #fff; 
+}
+.type-psychic  { 
+    background: #F85888; 
+    color: #fff; 
+}
+.type-rock     { 
+    background: #B8A038; 
+    color: #fff; 
+}
+.type-steel    { 
+    background: #B8B8D0; 
+    color: #333; 
+}
+.type-ice      { 
+    background: #98D8D8; 
+    color: #333; 
+}
+.type-ghost    { 
+    background: #705898; 
+    color: #fff; 
+}
+.type-dragon   { 
+    background: #7038F8; 
+    color: #fff; 
+}
+.type-dark     { 
+    background: #705848; 
+    color: #fff; 
+}
+
+.tema-rojo .card h3{
+  color: #fff;
+}
+
+
+
+.tema-rojo .card p{
+  color: #fff;
+}
+
+
+
+.tema-rojo button a{
+  color: #fff;
+} 
