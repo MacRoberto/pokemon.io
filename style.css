@@ -104,12 +104,12 @@ nav.hidden {
 }
 
 .about-api {
-  background: #ff5350;
-  margin: 20%;
+  background: gray;
+  margin: 5% 22% 22% 22%;
   padding: 3%;
-  width: 60%;
-  height: 20%;
-  border-radius: 40%;
+  width: 56%;
+  height: auto;
+  border-radius: 45%;
   display: inline-flex;
 }
 .elm {
@@ -124,5 +124,6 @@ nav.hidden {
 }
 .parafos {
   text-align: justify;
-  padding-left: 10%;
+  padding-top: 5%;
+  padding-left: 3%;
 }
