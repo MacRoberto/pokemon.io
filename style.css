@@ -173,6 +173,12 @@ nav.hidden {
 .card h1 {
     font-size: 28px;
     margin: 0;
+    width: 208px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .card h1 a{
@@ -313,3 +319,31 @@ nav.hidden {
 .tema-rojo button a{
   color: #fff;
 } 
+
+.pagination{
+  padding-top: 10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  align-items:center;
+  justify-content:center;
+  margin-block:2rem;
+}
+.pagination button{
+  padding:.4rem .8rem;
+  border-radius:.4rem;
+  background:#eee;
+  cursor:pointer;
+  border:none;
+}
+.pagination button.active{
+  background:#ffcb05;
+  font-weight:700;
+}
+.pagination input{
+  width:4rem;
+  padding:.4rem .3rem;
+  border-radius:.4rem;
+  border:1px solid #ccc;
+  text-align:center;
+}
