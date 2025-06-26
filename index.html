@@ -1,44 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="#">
-        <img src="img/Pokedex_logo.png" alt="Pokedex_logo" width="192px" height="61px">
-        </a>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="mainMenu" class="hidden">
-    <a href="#">About</a>
-    <a href="#">Information</a>
-    <div class="submenu">
-      <span onclick="toggleSubmenu()">Appearance ▼</span>
-      <div id="appearanceOptions" class="hidden">
-      <button data-tema="white">White</button>
-      <button data-tema="red">Red</button>
-      </div>
-    </div>
-    </nav>
+      <a href="#">
+        <img
+          src="img/Pokedex_logo.png"
+          alt="Pokedex_logo"
+          width="192px"
+          height="61px"
+        />
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="mainMenu" class="hidden">
+        <a href="#">About</a>
+        <a href="#">Information</a>
+        <div class="submenu">
+          <span onclick="toggleSubmenu()">Appearance ▼</span>
+          <div id="appearanceOptions" class="hidden">
+            <button data-tema="white">White</button>
+            <button data-tema="red">Red</button>
+          </div>
+        </div>
+      </nav>
     </header>
     <hero class="hero">
-        <div class="Pokedex_logo_Big">
+      <div class="Pokedex_logo_Big">
         <a href="#">
-            <img src="img/Pokedex_logo.png" alt="Pokedex_logo" width="495px" height="152px">
+          <img
+            src="img/Pokedex_logo.png"
+            alt="Pokedex_logo"
+            width="495px"
+            height="152px"
+          />
         </a>
-        </div>
+      </div>
     </hero>
     <main>
-        <section class="search_bar">   
-            <input id="searchInput" class="search" type="text" placeholder="search eg, ditto or pikachu" name="text">     
-            <a href="#" id="searchBtn" class="btn_red"><img src="img/search.png" alt="search_img" height="40px" width="38px"></a>
-        </section>
-    <section></section>
+      <section class="search_bar">
+        <input
+          id="searchInput"
+          class="search"
+          type="text"
+          placeholder="search eg, ditto or pikachu"
+          name="text"
+        />
+        <a href="#" id="searchBtn" class="btn_red"
+          ><img
+            src="img/search.png"
+            alt="search_img"
+            height="40px"
+            width="38px"
+        /></a>
+      </section>
+      <section></section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="informacion">
+        <p>Pokémons: <span id="pokemon-count">...</span></p>
+      </div>
+      <div class="footer-status">
+        <p>Estatus:</p>
+        <p>
+          <img src="img/large-green-circle-3005.png" width="13" height="13" />
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://x.com/PokeAPI"
+          ><img src="img/Twitter_Negro.svg" alt="" width="30px" height="30px"
+        /></a>
+        <a href="https://www.instagram.com/pokemon/"
+          ><img src="img/Instagram_Negro.svg" alt="" width="30px" height="30px"
+        /></a>
+        <a href="https://github.com/PokeAPI/pokeapi"
+          ><img src="img/Git_Negro.svg" alt="" width="30px" height="30px"
+        /></a>
+      </div>
+      <div class="derechos-autor">
+        <p>© Nintendo. All Rights Reserved.</p>
+      </div>
+      <div class="autores">
+        <p>Fernando Josue Lopez Cruz</p>
+        <p>Luis Amir Mendez Chavar</p>
+        <p>Emiliano Huchim Morales</p>
+        <p>Roberto May Cauich</p>
+      </div>
+    </footer>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
