@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img
+          src="img/Pokedex_logo.png"
+          alt="Pokedex_logo"
+          width="192px"
+          height="61px"
+        />
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="mainMenu" class="hidden">
+        <a href="index.html">Home</a>
+        <div class="submenu">
+          <span onclick="toggleSubmenu()">Appearance ▼</span>
+          <div id="appearanceOptions" class="hidden">
+            <button data-tema="white">White</button>
+            <button data-tema="red">Red</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="sec-about-api">
+        <div class="base-about">
+          <div class="about-api">
+            <img class="elm" src="img/elm.png" alt="Cargando Imagen..." />
+            <div class="parafos">
+              <h1 class="title-api">ABOUT API</h1>
+              <h3>What is this?</h3>
+              <p>
+                This website provides a RESTful API interface to highly detailed
+                objects built from thousands of lines of data related to
+                Pokémon. We specifically cover the video game franchise. Using
+                this website, you can consume information on Pokémon, their
+                moves, abilities, types, egg groups and much, much more.
+              </p>
+              <br />
+
+              <h3>What is an API?</h3>
+              <p>
+                An API (Application Programming Interface) is a contract that
+                allow developers to interact with an application through a set
+                of interfaces. In this case, the application is a database of
+                thousands of Pokémon-related objects, and the interfaces are URL
+                links.<br />
+                A RESTful API is an API that conforms to a set of loose
+                conventions based on HTTP verbs, errors, and hyperlinks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="oculto" id="pagination"></div>
+      </section>
+    </main>
+  </body>
+  <footer id="footer">
+    <div class="informacion">
+      <p>Pokémons: <span id="pokemon-count">...</span></p>
+    </div>
+    <div class="footer-status">
+      <p>Estatus:</p>
+      <p>
+        <img src="img/large-green-circle-3005.png" width="13" height="13" />
+      </p>
+    </div>
+    <div class="footer-links">
+      <a href="https://x.com/PokeAPI"
+        ><img src="img/Twitter_Negro.svg" alt="" width="30px" height="30px"
+      /></a>
+      <a href="https://www.instagram.com/pokemon/"
+        ><img src="img/Instagram_Negro.svg" alt="" width="30px" height="30px"
+      /></a>
+      <a href="https://github.com/PokeAPI/pokeapi"
+        ><img src="img/Git_Negro.svg" alt="" width="30px" height="30px"
+      /></a>
+    </div>
+    <div class="derechos-autor">
+      <p>© Nintendo. All Rights Reserved.</p>
+    </div>
+    <div class="autores">
+      <p>Fernando Josue Lopez Cruz</p>
+      <p>Luis Amir Mendez Chavar</p>
+      <p>Emiliano Huchim Morales</p>
+      <p>Roberto May Cauich</p>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</html>
