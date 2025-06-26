@@ -103,21 +103,28 @@ nav.hidden {
   margin-top: 16px;
 }
 
+.base-about {
+  height: 1000px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .about-api {
   background: gray;
-  margin: 5% 22% 22% 22%;
+  margin-top: 50px;
   padding: 3%;
-  width: 56%;
-  height: auto;
-  border-radius: 45%;
+  width: 795px;
+  height: 500px;
+  border-radius: 2350px;
   display: inline-flex;
 }
 .elm {
-  height: 400px;
+  height: 370px;
   width: auto;
-  padding: 0;
+
   margin-left: -20%;
-  margin-top: -5%;
+  margin-top: 90px;
 }
 .title-api {
   text-align: center;
@@ -125,5 +132,7 @@ nav.hidden {
 .parafos {
   text-align: justify;
   padding-top: 5%;
-  padding-left: 3%;
+  padding-left: 0%;
+  font-size: 20px;
+  margin: 15px;
 }
