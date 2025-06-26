@@ -430,3 +430,6 @@ footer .autores {
   font-size: 20px;
   margin: 15px;
 }
+.oculto {
+  display: none;
+}
