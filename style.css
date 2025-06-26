@@ -347,3 +347,55 @@ nav.hidden {
   border:1px solid #ccc;
   text-align:center;
 }
+footer{
+    background-color: #ccc;
+    height: 200px;
+    width: 100%;
+    margin-top: 10px;
+}
+footer .informacion{
+    text-align: center;
+    justify-content:center ;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 20px;
+}
+footer .footer-status{
+    font-weight: bold;
+    font-size: 18px;
+}
+footer .footer-status{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+footer .footer-links{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links a {
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+footer .footer-links a:hover {
+    transform: scale(1.15);
+}
+footer .derechos-autor{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+    color: #333;
+}
+footer .autores{
+    padding-top: 5px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}

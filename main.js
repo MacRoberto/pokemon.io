@@ -201,3 +201,12 @@ function makeButton(label, cb, active=false){
   return b;
 }
 function goToPage(p){ renderPage(p); buildPaginator(p); }
+
+fetch('https://pokeapi.co/api/v2/pokemon-species?limit=0')
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById('pokemon-count').textContent = data.count;
+  })
+  .catch(() => {
+    document.getElementById('pokemon-count').textContent = 'No disponible';
+  });
