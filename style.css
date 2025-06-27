@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-color: #f6f8fc;
   font-family: "Kumbh Sans", sans-serif;
+  transition: background 0.5s ease;
 }
 
 body.tema-rojo {
