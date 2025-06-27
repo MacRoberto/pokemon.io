@@ -12,7 +12,16 @@ body {
   background-size: cover;
   background-color: #f6f8fc;
   font-family: "Kumbh Sans", sans-serif;
+  transition: background 0.5s ease;
 }
+
+body.tema-rojo {
+    background-image: url(img/Background_red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ff0000;
+}
+
 .header {
   display: flex;
   margin-top: 43px;
@@ -394,6 +403,17 @@ footer .autores {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+body.tema-rojo footer {
+  background-color: #3d3c3c;
+}
+body.tema-rojo footer,
+body.tema-rojo footer .informacion,
+body.tema-rojo footer .footer-status,
+body.tema-rojo footer .footer-links a,
+body.tema-rojo footer .derechos-autor,
+body.tema-rojo footer .autores {
+  color: #fff;
 }
 
 .base-about {

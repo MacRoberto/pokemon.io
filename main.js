@@ -68,9 +68,9 @@ fetch("https://pokeapi.co/api/v2/pokemon/?limit=30")
                         </div>
                             <h3>${idReal}</h3>
                     </div>
-                    <h1><a href="#">${pokemon.name}</a></h1>
+                    <h1><a href="pokemon.html?id=${id}">${pokemon.name}</a></h1>
                     <p>${descripcion}</p>
-                    <button class="button"><a href="#">Know More</a></button>
+                    <button class="button"><a href="pokemon.html?id=${id}">Know More</a></button>
                 </div>
                 <img src="${sprite}" alt="${pokemon.name}">
                 </div>
@@ -143,9 +143,9 @@ async function renderPage(page) {
               </div>
               <h3>${idFmt}</h3>
             </div>
-            <h1><a href="#">${pkm.name}</a></h1>
+            <h1><a href="pokemon.html?id=${id}">${pkm.name}</a></h1>
             <p>${desc}</p>
-            <button class="button"><a href="#">Know More</a></button>
+            <button class="button"><a href="pokemon.html?id=${id}">Know More</a></button>
           </div>
           <img src="${sprite}" alt="${pkm.name}">
         </div>`;
@@ -230,3 +230,19 @@ fetch("https://pokeapi.co/api/v2/pokemon-species?limit=0")
   .catch(() => {
     document.getElementById("pokemon-count").textContent = "No disponible";
   });
+
+const botonesTema = document.querySelectorAll('button[data-tema]');
+
+botonesTema.forEach(boton => {
+  boton.addEventListener('click', () => {
+    const tema = boton.dataset.tema;
+
+    if (tema === 'red') {
+      document.body.classList.add('tema-rojo');
+      document.body.classList.remove('tema-blanco');
+    } else if (tema === 'white') {
+      document.body.classList.remove('tema-rojo');
+      document.body.classList.add('tema-blanco');
+    }
+  });
+});
