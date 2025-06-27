@@ -68,9 +68,9 @@ fetch("https://pokeapi.co/api/v2/pokemon/?limit=30")
                         </div>
                             <h3>${idReal}</h3>
                     </div>
-                    <h1><a href="#">${pokemon.name}</a></h1>
+                    <h1><a href=""pokemon.html?id=${id}"">${pokemon.name}</a></h1>
                     <p>${descripcion}</p>
-                    <button class="button"><a href="#">Know More</a></button>
+                    <button class="button"><a href=""pokemon.html?id=${id}"">Know More</a></button>
                 </div>
                 <img src="${sprite}" alt="${pokemon.name}">
                 </div>
