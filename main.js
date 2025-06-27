@@ -230,3 +230,19 @@ fetch("https://pokeapi.co/api/v2/pokemon-species?limit=0")
   .catch(() => {
     document.getElementById("pokemon-count").textContent = "No disponible";
   });
+
+const botonesTema = document.querySelectorAll('button[data-tema]');
+
+botonesTema.forEach(boton => {
+  boton.addEventListener('click', () => {
+    const tema = boton.dataset.tema;
+
+    if (tema === 'red') {
+      document.body.classList.add('tema-rojo');
+      document.body.classList.remove('tema-blanco');
+    } else if (tema === 'white') {
+      document.body.classList.remove('tema-rojo');
+      document.body.classList.add('tema-blanco');
+    }
+  });
+});
