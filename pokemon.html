@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+        <img src="img/Pokedex_logo.png" alt="Pokedex_logo" width="192px" height="61px">
+        </a>
+
+        <!-- //Mi menu -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="mainMenu" class="hidden">
+            <a href="#">About</a>
+            <a href="#">Information</a>
+            <div class="submenu">
+                <span onclick="toggleSubmenu()">Appearance ▼</span>
+                <div id="appearanceOptions" class="hidden">
+                    <button data-tema="white">White</button>
+                    <button data-tema="red">Red</button>
+                </div>
+            </div>
+        </nav>
+    </header>  
+
+    <section class="container_token"></section>
+
+
+    <div class="pokemon-evolve">
+        <h1 class="Evolution">EVOLUTION</h1>
+        <div class="evolve-box" id="evolveBox"></div>
+    </div>
+
+    <div class="pokemon-forms">
+        <h1 class="Forms" style="margin-bottom: 50px; text-transform: uppercase;">Forms</h1>
+        <div class="forms-box" id="formsBox"></div>
+    </div>
+    <script src="pokemon.js"></script> 
+    
+</body>
+</html>
