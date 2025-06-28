@@ -16,10 +16,10 @@ body {
 }
 
 body.tema-rojo {
-    background-image: url(img/Background_red.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #ff0000;
+  background-image: url(img/Background_red.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff0000;
 }
 
 .header {
@@ -436,7 +436,6 @@ body.tema-rojo footer .autores {
 .elm {
   height: 410px;
   width: auto;
-
   margin-left: -20%;
   margin-top: 100px;
 }
@@ -452,4 +451,26 @@ body.tema-rojo footer .autores {
 }
 .oculto {
   display: none;
+}
+.oak {
+  padding; 0px 0px 0px 10px;
+  height: 370px;
+  width: auto;
+  margin-top: 50px;
+
+}
+.title-pokemon {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 10px;
+}
+.parafo-pokemon{
+  font-size: 20px;
+  margin: 15px;
+  text-align: center;
+  line-height: 40px;
+}
+.pokemon-review {
+  margin-left: -30px;
 }
