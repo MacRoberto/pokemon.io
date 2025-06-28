@@ -8,37 +8,73 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html">
-        <img src="img/Pokedex_logo.png" alt="Pokedex_logo" width="192px" height="61px">
-        </a>
+      <a href="index.html">
+        <img
+          src="img/Pokedex_logo.png"
+          alt="Pokedex_logo"
+          width="192px"
+          height="61px"
+        />
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav id="mainMenu" class="hidden">
+        <a href="about-api.html">About</a>
+        <a href="https://www.pokemon.com/el">Information</a>
+        <div class="submenu">
+          <span onclick="toggleSubmenu()">Appearance ▼</span>
+          <div id="appearanceOptions" class="hidden">
+            <button data-tema="white">White</button>
+            <button data-tema="red">Red</button>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <!-- //Mi menu -->
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <nav id="mainMenu" class="hidden">
-            <a href="#">About</a>
-            <a href="#">Information</a>
-            <div class="submenu">
-                <span onclick="toggleSubmenu()">Appearance ▼</span>
-                <div id="appearanceOptions" class="hidden">
-                    <button data-tema="white">White</button>
-                    <button data-tema="red">Red</button>
-                </div>
-            </div>
-        </nav>
-    </header>  
+    <main>
+        <section class="container_token"></section>
 
-    <section class="container_token"></section>
+        <div class="pokemon-evolve">
+            <h1 class="Evolution">EVOLUTION</h1>
+            <div class="evolve-box" id="evolveBox"></div>
+        </div>
 
-
-    <div class="pokemon-evolve">
-        <h1 class="Evolution">EVOLUTION</h1>
-        <div class="evolve-box" id="evolveBox"></div>
-    </div>
-
-    <div class="pokemon-forms">
-        <h1 class="Forms" style="margin-bottom: 50px; text-transform: uppercase;">Forms</h1>
-        <div class="forms-box" id="formsBox"></div>
-    </div>
+        <div class="pokemon-forms">
+            <h1 class="Forms" style="margin-bottom: 50px; text-transform: uppercase;">Forms</h1>
+            <div class="forms-box" id="formsBox"></div>
+        </div>
+    </main>
+    
+    <footer id="footer">
+        <div class="informacion">
+            <p>Pokémons: <span id="pokemon-count">...</span></p>
+        </div>
+        <div class="footer-status">
+            <p>Estatus:</p>
+            <p>
+            <img src="img/large-green-circle-3005.png" width="13" height="13" />
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="https://x.com/PokeAPI"
+            ><img src="img/Twitter_Negro.svg" alt="" width="30px" height="30px"
+            /></a>
+            <a href="https://www.instagram.com/pokemon/"
+            ><img src="img/Instagram_Negro.svg" alt="" width="30px" height="30px"
+            /></a>
+            <a href="https://github.com/PokeAPI/pokeapi"
+            ><img src="img/Git_Negro.svg" alt="" width="30px" height="30px"
+            /></a>
+        </div>
+        <div class="derechos-autor">
+            <p>© Nintendo. All Rights Reserved.</p>
+        </div>
+        <div class="autores">
+            <p>Fernando Josue Lopez Cruz</p>
+            <p>Luis Amir Mendez Chavar</p>
+            <p>Emiliano Huchim Morales</p>
+            <p>Roberto May Cauich</p>
+        </div>
+    </footer>
     <script src="pokemon.js"></script> 
     
 </body>

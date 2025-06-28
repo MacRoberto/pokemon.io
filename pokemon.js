@@ -1,3 +1,11 @@
+function toggleMenu() {
+  document.getElementById("mainMenu").classList.toggle("hidden");
+}
+
+function toggleSubmenu() {
+  document.getElementById("appearanceOptions").classList.toggle("hidden");
+}
+
 const paramsString = window.location.search;
 const searchParams = new URLSearchParams(paramsString);
 const id = searchParams.get("id");
@@ -240,7 +248,27 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + id)
     });
 });
 
+fetch("https://pokeapi.co/api/v2/pokemon-species?limit=0")
+  .then((r) => r.json())
+  .then((data) => {
+    document.getElementById("pokemon-count").textContent = data.count;
+  })
+  .catch(() => {
+    document.getElementById("pokemon-count").textContent = "No disponible";
+  });
 
-// 891
-// 848
-// 744
+const botonesTema = document.querySelectorAll('button[data-tema]');
+
+botonesTema.forEach(boton => {
+  boton.addEventListener('click', () => {
+    const tema = boton.dataset.tema;
+
+    if (tema === 'red') {
+      document.body.classList.add('tema-rojo');
+      document.body.classList.remove('tema-blanco');
+    } else if (tema === 'white') {
+      document.body.classList.remove('tema-rojo');
+      document.body.classList.add('tema-blanco');
+    }
+  });
+});

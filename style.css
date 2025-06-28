@@ -487,6 +487,9 @@ body.tema-rojo footer .autores {
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
+.tema-rojo .container_token {
+  background-color: #77b35b;
+}
 .container_token img{
     margin: 30px 100px;
     width: 470px;
@@ -512,16 +515,30 @@ body.tema-rojo footer .autores {
     padding: 5px;
 }
 
+.tema-rojo .token-begin-row .ID{
+  color: white;
+}
+
 .token-begin-row .Generation{
     background-color: #F6F8FC;
     padding: 5px; 
     border-radius: 5px;
 }
 
+.tema-rojo .token-begin-row .Generation{
+  background-color: #BFC66B;
+  color: white;
+}
+
 .token-begin-row .Region{
     background-color: #F6F8FC;
     padding: 5px;
     border-radius: 5px;
+}
+
+.tema-rojo .token-begin-row .Region{
+  background-color: #BFC66B;
+  color: white;
 }
 
 .info_token h1{
@@ -532,6 +549,10 @@ body.tema-rojo footer .autores {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
+}
+
+.tema-rojo .info_token h1 {
+  color: white;
 }
 
 .token-h2-row{
@@ -552,10 +573,18 @@ body.tema-rojo footer .autores {
     color: black;
 }
 
+.tema-rojo .token-h2-row h2 {
+  color: white;
+}
+
 .info_token p{
     display: flex;
     color: black;
     font-size: 14px;
+}
+
+.tema-rojo .info_token p {
+  color: white;
 }
 
 .token-h3-row{
@@ -576,6 +605,11 @@ body.tema-rojo footer .autores {
     gap: 60px;
     font-size: 15px;
     color: black;
+}
+
+.tema-rojo .hw-box {
+  background: #BFC66B;
+  color: white;
 }
 
 .hw-label {
@@ -599,6 +633,9 @@ body.tema-rojo footer .autores {
     font-size: 22px;
 }
 
+.tema-rojo .info_token .Stats {
+  color: white;
+}
 .stat-box {
     display: flex;
     justify-content: space-between;
@@ -613,6 +650,9 @@ body.tema-rojo footer .autores {
     font-weight: bold;
 }
 
+.tema-rojo .stat-box {
+  color: white;
+}
 .token-h5-row{
     display: flex;
     gap: 10px;
@@ -623,6 +663,11 @@ body.tema-rojo footer .autores {
     height: 30px;
     margin-top: 15px;
 }
+
+.tema-rojo .info_token .Abilities {
+  color: white;
+}
+
 .token-h5-row h5{
     padding: 10px 20px;
     height: 40px;
@@ -632,7 +677,12 @@ body.tema-rojo footer .autores {
     text-align: center;
     cursor: pointer;
     color: black;
-} 
+}
+
+.tema-rojo .token-h5-row h5 {
+  color: white;
+  background: #bfc66b;
+}
 
 /* Evoluciones */
 
@@ -640,6 +690,11 @@ body.tema-rojo footer .autores {
     width: 1250px;
     margin: 80px auto;
 }
+
+.tema-rojo .pokemon-evolve {
+  color: white;
+}
+
 .evolve-box{
     display: flex;
     justify-content: space-between;
@@ -652,6 +707,10 @@ body.tema-rojo footer .autores {
     width: 1250px;
     height: 250px;
     margin: 80px auto;
+}
+
+.tema-rojo .pokemon-forms {
+  color: white;
 }
 
 .forms-box{
