@@ -43,13 +43,16 @@
     </hero>
     <main>
       <section class="search_bar">
-        <input
-          id="searchInput"
-          class="search"
-          type="text"
-          placeholder="search eg, ditto or pikachu"
-          name="text"
-        />
+        <div class="search-wrapper">
+          <input
+            id="searchInput"
+            class="search"
+            type="text"
+            placeholder="search eg, ditto or pikachu"
+            name="text"
+          />
+          <ul id="autocomplete-results"></ul>
+        </div>
         <a href="#" id="searchBtn" class="btn_red"
           ><img
             src="img/search.png"
