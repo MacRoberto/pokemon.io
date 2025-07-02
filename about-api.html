@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
   </head>
   <body>
     <header class="header">
@@ -15,17 +16,51 @@
           alt="Pokeball_logo"
         />
       </a>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <nav id="mainMenu" class="hidden">
-        <a href="index.html">Home</a>
-        <div class="submenu">
-          <span onclick="toggleSubmenu()">Appearance ▼</span>
-          <div id="appearanceOptions" class="hidden">
-            <button data-tema="white">White</button>
-            <button data-tema="red">Red</button>
-          </div>
+      
+    <nav id="menu" class="menu">
+        <div class="actionBar">
+            <div>
+                <button id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <h3 class="menuText">Pokédex</h3>
+            </div>
         </div>
-      </nav>
+
+        <ul class="optionsBar">
+            <li class="menuItem">
+                <a href="index.html" class="menuOption">
+                    <i class="fa-solid fa-house"></i><h5 class="menuText">Home</h5>
+                </a>
+            </li>
+
+            <li class="menuBreak">
+                <hr>
+            </li>
+
+            <li class="menuItem">
+                <a href="about-api.html" class="menuOption" id="constantManagerBtn">
+                  <i class="fa-solid fa-shopping-bag"></i>
+                  <h5 class="menuText">About Pokémon API</h5>
+                </a>
+            </li>
+
+            <li class="menuItem">
+                <a href="about-pokemon.html" class="menuOption" id="constantManagerBtn">
+                  <i class="fa-solid fa-border-all"></i>
+                  <h5 class="menuText">Pokémon Information</h5>
+                </a>
+            </li>
+
+            <div class="themeBar">
+              <div>
+                <button id="themeChangeBtn"><i class="fa-solid "></i></button>
+                </button>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </header>
 
     <main>
