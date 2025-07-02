@@ -905,7 +905,7 @@ body { overflow: auto; }
 
     .menu .themeBar {
         overflow: hidden;
-        width: 100%;
+        width: 200px;
         height: 10%;
         padding: .5rem;
     }
