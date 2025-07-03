@@ -1070,3 +1070,9 @@ body { overflow: auto; }
 .menu .actionBar div button:hover i, 
 .menu .themeBar div button:hover i { color: #ffffff; }
 
+@media (max-width: 768px) {
+    .menu {
+        background-color: rgba(238, 240, 244, 0.7); /* misma base que #eef0f4 pero con 70% opacidad */
+        backdrop-filter: blur(4px); /* opcional: suaviza el fondo */
+    }
+}
