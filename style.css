@@ -730,8 +730,6 @@ body.tema-rojo footer .autores {
     margin-top: 10px;
 }
 
-/* css funcionalidad de search bar */
-
 .search-wrapper {
   display: flex;
   flex-direction: column;
@@ -774,3 +772,169 @@ body.tema-rojo footer .autores {
 #autocomplete-results li:hover {
   background-color: #f3f3f3;
 }
+
+:root {
+    --bg-black100: #353535;
+    --bg-black50: #eef0f4;
+    --bg-black20: #414546;
+}
+
+body { overflow: auto; }
+
+    body.dark {
+        --bg-black100: #fff;
+        --bg-black50: #000;
+        --bg-black20: #eef0f4;
+    }
+
+.menu {
+    position: absolute;
+    width: 60px;
+    height: 300px;
+    background-color: var(--bg-black50);
+    z-index: 2;
+    right: 5px;
+    top: 0;
+    bottom: 50%;
+    left: auto;
+    margin: auto;
+    border-radius: .8rem;
+    transition: .3s ease .15s;
+    font-family: sans-serif;
+}
+
+    .menu.open { width: 240px; }
+    .menu a { text-decoration: none; }
+
+    .menu .actionBar {
+        width: 100%;
+        height: 10%;
+        padding: 0.5rem;
+        overflow: hidden;
+    }
+
+        .menu .actionBar div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: .5rem;
+            transition: .3s ease;
+        }
+
+            .menu .actionBar div button {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-radius: .5rem;
+                color: var(--bg-black100);
+                width: 45px;
+                height: 45px;
+                transition: .3s ease;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+                .menu .actionBar div button:hover { background-color: rgb(132, 0, 255); }
+
+            .menu .actionBar div h3 { width: calc(100% - 45px); text-align: center; }
+
+    .menu .optionsBar {
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        height: 60%;
+        padding: 0 .5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+        .menu .optionsBar .menuItem {
+            width: 100%;
+            height: 45px;
+            margin: 0.3rem;
+        }
+
+            .menu .optionsBar .menuItem .menuOption {
+                font-size: 1rem;
+                outline: none;
+                border: none;
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: .5rem;
+                transition: .3s ease;
+                cursor: pointer;
+            }
+
+            .menu .optionsBar .menuItem .menuOption:hover { background-color: rgb(132, 0, 255); }
+            .menu .optionsBar .menuItem .menuOption i { width: 45px; text-align: center; color: var(--bg-black100); }
+            .menu .optionsBar .menuItem .menuOption h5 { width: calc(100% - 45px); }
+
+.menuText {
+    color: var(--bg-black20);
+    transform: translateX(-250px);
+    opacity: 0;
+    transition: transform .3s ease .1s;
+}
+
+    .menuText.open2 {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menu .menuBreak {
+        width: 100%;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .menu .menuBreak hr {
+            width: 50%;
+            height: 3px;
+            background-color: var(--bg-black100);
+            border: none;
+            border-radius: 5px;
+        }
+
+    .menu .themeBar {
+        overflow: hidden;
+        width: 200px;
+        height: 10%;
+        padding: .5rem;
+    }
+
+        .menu .themeBar div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: .5rem;
+            transition: .3s ease;
+        }
+
+            .menu .themeBar div button {
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-radius: .5rem;
+                color: var(--bg-black100);
+                width: 100%;
+                height: 45px;
+                transition: .3s ease;
+                font-size: 1rem;
+            }
+
+                .menu .themeBar div button:hover { background-color: rgb(132, 0, 255); }
+
+.menu .optionsBar .menuItem .menuOption:hover .menuText,
+.menu .optionsBar .menuItem .menuOption:hover i,
+.menu .actionBar div button:hover i, 
+.menu .themeBar div button:hover i { color: #ffffff; }

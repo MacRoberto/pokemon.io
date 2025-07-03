@@ -6,6 +6,55 @@ function toggleSubmenu() {
   document.getElementById("appearanceOptions").classList.toggle("hidden");
 }
 
+const menuBtn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+const menuText = document.querySelectorAll('.menuText');
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    menuText.forEach(function(text, index,) {
+        setTimeout(() => {
+            text.classList.toggle('open2');
+        }, index * 50);
+    })
+});
+
+const dayNight = document.querySelector('#themeChangeBtn');
+dayNight.addEventListener('click', () => {
+  document.body.classList.toggle('tema-rojo');
+  document.body.classList.toggle('tema-blanco');
+  if(document.body.classList.contains('tema-rojo')){
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+  updateIcon();
+});
+
+function themeMode() {
+  if(localStorage.getItem('theme') !== null){
+    if(localStorage.getItem('theme') === 'light'){
+      document.body.classList.remove('tema-rojo');
+      document.body.classList.add('tema-blanco');
+    } else {
+      document.body.classList.remove('tema-blanco');
+      document.body.classList.add('tema-rojo');
+    }
+  }
+  updateIcon();
+}
+themeMode();
+
+function updateIcon() {
+  if(document.body.classList.contains('tema-rojo')){
+    dayNight.querySelector('i').classList.remove('fa-moon');
+    dayNight.querySelector('i').classList.add('fa-sun');
+  } else {
+    dayNight.querySelector('i').classList.remove('fa-sun');
+    dayNight.querySelector('i').classList.add('fa-moon');
+  }
+}
+
 const paramsString = window.location.search;
 const urlParams = new URLSearchParams(paramsString);
 
@@ -230,22 +279,6 @@ fetch("https://pokeapi.co/api/v2/pokemon-species?limit=0")
   .catch(() => {
     document.getElementById("pokemon-count").textContent = "No disponible";
   });
-
-const botonesTema = document.querySelectorAll('button[data-tema]');
-
-botonesTema.forEach(boton => {
-  boton.addEventListener('click', () => {
-    const tema = boton.dataset.tema;
-
-    if (tema === 'red') {
-      document.body.classList.add('tema-rojo');
-      document.body.classList.remove('tema-blanco');
-    } else if (tema === 'white') {
-      document.body.classList.remove('tema-rojo');
-      document.body.classList.add('tema-blanco');
-    }
-  });
-});
 
 document.getElementById("searchBtn").addEventListener("click", handleSearch);
 document.getElementById("searchInput").addEventListener("keypress", function (e) {
