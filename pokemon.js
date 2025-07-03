@@ -81,7 +81,11 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + id)
 
         const height = (json.height / 10) + "m";
         const weight = (json.weight / 10) + "kg";
-        const abilities = json.abilities.map(a => `<h5>${a.ability.name.charAt(0).toUpperCase() + a.ability.name.slice(1)}</h5>`).join('');
+        const abilities = json.abilities.map(a =>
+    `<h5 class="ability-item" data-ability="${a.ability.name}">
+        ${a.ability.name.charAt(0).toUpperCase() + a.ability.name.slice(1)}
+     </h5>`
+).join('');
         const statColors = {
             hp: "#DF2140",
             attack: "#FF994D",
@@ -139,6 +143,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + id)
 
         `;
         container.innerHTML = token;
+        attachAbilityListeners();
 
         fetch(species.evolution_chain.url)
         .then (res => res.json())
@@ -320,4 +325,41 @@ function updateIcon() {
     dayNight.querySelector('i').classList.remove('fa-sun');
     dayNight.querySelector('i').classList.add('fa-moon');
   }
+}
+
+function attachAbilityListeners() {
+
+  document.querySelector('.token-h5-row')?.addEventListener('click', e => {
+    const item = e.target.closest('.ability-item');
+    if (!item) return;
+
+    const abilityName = item.dataset.ability;
+    fetchAbilityData(abilityName);
+  });
+}
+
+function fetchAbilityData(name) {
+  fetch(`https://pokeapi.co/api/v2/ability/${name}`)
+    .then(r => r.json())
+    .then(data => {
+      const entry = data.effect_entries.find(e => e.language.name === 'en');
+      const description = entry ? entry.effect.replace(/[\n\r\f]/g, ' ')
+                                : 'No description available.';
+      openAbilityModal(
+        name.charAt(0).toUpperCase() + name.slice(1),
+        description
+      );
+    })
+    .catch(() => openAbilityModal('Error', 'Could not load description.'));
+}
+
+function openAbilityModal(title, text) {
+  document.getElementById('abilityTitle').textContent = title;
+  document.getElementById('abilityText').textContent  = text;
+
+  const modal = document.getElementById('abilityModal');
+  modal.classList.remove('hidden');
+
+  document.getElementById('closeModal').onclick = () => modal.classList.add('hidden');
+  modal.onclick = e => { if (e.target === modal) modal.classList.add('hidden'); };
 }
