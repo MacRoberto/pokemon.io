@@ -404,6 +404,12 @@ nav.hidden {
     padding: 0.3rem 0.5rem;
     min-width: 32px;
   }
+
+  .autores p{
+    font-size: 13px !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
 }
 
 @media (min-width: 730px) and (max-width: 1220px){
