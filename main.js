@@ -130,6 +130,15 @@ fetch("https://pokeapi.co/api/v2/pokemon/?limit=30")
     Promise.all(promises).then((cards) => {
       pokemon_container.innerHTML = cards.join("");
 
+      const allCards = document.querySelectorAll(".container-cards .card");
+      console.log("Tarjetas totales:", allCards.length);
+
+      if (allCards.length % 2 !==0) {
+        const lastCard = allCards[allCards.length - 1];
+        lastCard.classList.add("last-card");
+        console.log("Ultima tarjeta centrada", lastCard)
+      }
+
       document.querySelectorAll(`.card`).forEach((card) => {
         const typeElements = card.querySelectorAll(`.card-h2-row h2`);
         typeElements.forEach((typeElement) => {
@@ -202,6 +211,15 @@ async function renderPage(page) {
   );
 
   document.querySelector(".container-cards").innerHTML = cards.join("");
+
+    const allCards = document.querySelectorAll(".container-cards .card");
+      console.log("Tarjetas totales:", allCards.length);
+
+      if (allCards.length % 2 !==0) {
+        const lastCard = allCards[allCards.length - 1];
+        lastCard.classList.add("last-card");
+        console.log("Ultima tarjeta centrada", lastCard)
+      }
 
   const typeClassMap = {
     grass: "type-grass",
