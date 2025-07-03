@@ -938,3 +938,12 @@ body { overflow: auto; }
 .menu .optionsBar .menuItem .menuOption:hover i,
 .menu .actionBar div button:hover i, 
 .menu .themeBar div button:hover i { color: #ffffff; }
+
+.modal.hidden         { display:none; }
+.modal                { position:fixed; inset:0; background:rgba(0,0,0,.5); 
+                        display:flex; align-items:center; justify-content:center; }
+.modal-content        { background:#fff; padding:24px 32px; max-width:420px; 
+                        border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,.3);
+                        font-family:Verdana, sans-serif; line-height:1.4; }
+.close                { position:absolute; top:8px; right:12px; cursor:pointer; 
+                        font-size:28px; }
