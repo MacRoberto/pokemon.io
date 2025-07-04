@@ -18,8 +18,13 @@ body {
 body.tema-rojo {
   background-image: url(img/Background_red.png);
   background-repeat: no-repeat;
+<<<<<<< Updated upstream
   background-size: cover;
   background-color: #ff0000;
+=======
+  background-size: contain;
+  background-color: #dd092f;
+>>>>>>> Stashed changes
 }
 
 .header {
@@ -325,6 +330,149 @@ nav.hidden {
   color: #fff;
 }
 
+<<<<<<< Updated upstream
+=======
+@media (max-width: 730px) {
+  .header {
+    margin-top: 20px;
+    margin-left: 10px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header img#logo_pokeball {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Pokedex_logo_Big {
+    margin-top: 80px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Pokedex_logo_Big img {
+    width: 280px;
+    height: 80px;
+  }
+
+  .search_bar {
+    display: flex;
+    padding-top: 35px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search {
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  .btn_red {
+    width: 60%;
+    max-width: 50px;
+    height: 50px;
+  }
+
+  .btn_red img {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .container-cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0.5rem;
+    font-size: 14px;
+    max-width: 100vw;
+    overflow-x: auto;
+  }
+
+  .pagination button,
+  .pagination input {
+    padding: 0.3rem 0.5rem;
+    min-width: 32px;
+  }
+
+  #footer {
+    width: 102%;
+  }
+
+  .autores p {
+    font-size: 13px !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+}
+
+@media (min-width: 730px) and (max-width: 1220px) {
+  .header {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .search_bar {
+    display: flex;
+    padding-top: 35px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search {
+    width: 90%;
+    height: 65px;
+    margin: 0 auto;
+  }
+
+  .btn_red {
+    width: 60%;
+    max-width: 65px;
+    height: 65px;
+  }
+
+  .btn_red img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .card.last-card {
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0.5rem;
+    font-size: 14px;
+    max-width: 100vw;
+    overflow-x: auto;
+  }
+
+  .pagination button,
+  .pagination input {
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+>>>>>>> Stashed changes
 .pagination {
   padding-top: 10px;
   display: flex;
@@ -460,7 +608,7 @@ body.tema-rojo footer .autores {
 
 }
 .title-pokemon {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 50px;
   margin-top: 10px;
