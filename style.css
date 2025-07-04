@@ -19,7 +19,7 @@ body.tema-rojo {
   background-image: url(img/Background_red.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #DD092F;
+  background-color: #dd092f;
 }
 
 .header {
@@ -409,7 +409,7 @@ nav.hidden {
     width: 102%;
   }
 
-  .autores p{
+  .autores p {
     font-size: 13px !important;
     margin: 0 auto !important;
     text-align: center;
@@ -608,9 +608,9 @@ body.tema-rojo footer .autores {
   margin-top: 50px;
 }
 .title-pokemon {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 10px;
 }
 .parafo-pokemon {
@@ -666,11 +666,11 @@ body.tema-rojo footer .autores {
     margin: 0 auto !important;
   }
 
-  .info_token h1{
+  .info_token h1 {
     font-size: 38px !important;
     text-align: center !important;
   }
-  
+
   .token-begin-row,
   .token-h2-row,
   .token-h3-row,
@@ -734,7 +734,7 @@ body.tema-rojo footer .autores {
     margin-bottom: 10px !important;
   }
 
-  .modal-content{
+  .modal-content {
     width: 80%;
     max-width: 100%;
   }
@@ -749,7 +749,7 @@ body.tema-rojo footer .autores {
 
   .pokemon-evolve img,
   .pokemon-forms img {
-    width: 100% ;
+    width: 100%;
     max-width: 250px;
     height: auto;
     margin: 0 auto;
@@ -764,7 +764,7 @@ body.tema-rojo footer .autores {
     align-items: center !important;
   }
 
-  .pokemon-forms h1{
+  .pokemon-forms h1 {
     text-align: center !important;
     margin: 0 auto !important;
   }
@@ -777,7 +777,6 @@ body.tema-rojo footer .autores {
     gap: 10px;
     width: 100%;
   }
-
 }
 
 @media (min-width: 1001px) and (max-width: 1230px) {
@@ -793,7 +792,7 @@ body.tema-rojo footer .autores {
     align-items: center !important;
   }
 
-  .container_token img{
+  .container_token img {
     width: 100%;
     max-width: 350px;
     height: 100%;
@@ -804,7 +803,7 @@ body.tema-rojo footer .autores {
     margin-top: 10px;
   }
 
-  .info_token p{
+  .info_token p {
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -813,7 +812,7 @@ body.tema-rojo footer .autores {
     margin-bottom: 15px;
   }
 
-  .modal-content{
+  .modal-content {
     width: 80%;
     max-width: 100%;
   }
@@ -828,7 +827,7 @@ body.tema-rojo footer .autores {
 
   .pokemon-evolve img,
   .pokemon-forms img {
-    width: 100% ;
+    width: 100%;
     max-width: 250px;
     height: auto;
     margin: 0 auto;
@@ -843,7 +842,7 @@ body.tema-rojo footer .autores {
     align-items: center !important;
   }
 
-  .pokemon-forms h1{
+  .pokemon-forms h1 {
     text-align: center !important;
     margin: 0 auto !important;
   }
