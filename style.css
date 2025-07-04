@@ -19,7 +19,7 @@ body.tema-rojo {
   background-image: url(img/Background_red.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #ff0000;
+  background-color: #DD092F;
 }
 
 .header {
@@ -342,9 +342,9 @@ nav.hidden {
     align-items: center;
   }
 
-  .header img {
-    width: 85px;
-    height: 85px;
+  .header img#logo_pokeball {
+    width: 80px;
+    height: 80px;
   }
 
   .Pokedex_logo_Big {
@@ -405,7 +405,11 @@ nav.hidden {
     min-width: 32px;
   }
 
-  .autores p {
+  #footer {
+    width: 102%;
+  }
+
+  .autores p{
     font-size: 13px !important;
     margin: 0 auto !important;
     text-align: center;
