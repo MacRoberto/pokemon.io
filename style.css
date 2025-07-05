@@ -509,6 +509,13 @@ nav.hidden {
   .body-about > footer {
     margin-top: auto;
   }
+
+
+.parafo-pokemon{
+  text-align: center;
+  padding-left: 50px;
+}
+
 }
 
 
@@ -646,7 +653,7 @@ body.tema-rojo footer .autores {
   margin-top: 50px;
 }
 .title-pokemon {
-  text-align: left;
+  text-align: center;
   font-weight: bold;
   font-size: 45px;
   margin-top: 10px;
@@ -657,9 +664,7 @@ body.tema-rojo footer .autores {
   text-align: center;
   line-height: 40px;
 }
-.pokemon-review {
-  margin-left: -30px;
-}
+
 
 .container_token {
   display: flex;
@@ -968,6 +973,20 @@ body.tema-rojo footer .autores {
   height: auto;
   max-height: 550px;
   padding-left: 300px;
+}
+
+.oak{
+  width: auto;
+  height: auto;
+  max-height: 500px;
+  padding-left: 50px;
+}
+
+.parafo-pokemon{
+  width: 60%;
+  font-size: 17px;
+  text-align: center;
+  padding-right: 10px;
 }
 
 .parafos {
@@ -1492,6 +1511,13 @@ background-repeat: no-repeat;
   margin: 0 auto 20px auto;
 }
 
+
+.oak {
+  width: 50%;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+
 .parafos {
   padding: 0;
   text-align: left;
@@ -1514,6 +1540,14 @@ background-repeat: no-repeat;
     margin-top: auto;
   }
 
+
+  .body-about.tema-rojo > footer {
+    margin-top: auto;
+  }
+
+.parafo-pokemon {
+  font-size: 16px;
+  text-align: center;
 }
 
 .modal.hidden {
