@@ -15,6 +15,33 @@ body {
   transition: background 0.5s ease;
 }
 
+.body-about {
+background-image: url(img/Background.png);
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.body-about > footer {
+  margin-top: auto;
+}
+
+.body-about.tema-rojo {
+  background-image: url(img/Background_red.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #DD092F;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-about.tema-rojo > footer {
+  margin-top: auto;
+}
+
 body.tema-rojo {
   background-image: url(img/Background_red.png);
   background-repeat: no-repeat;
@@ -472,7 +499,18 @@ nav.hidden {
   .pagination input {
     padding: 0.3rem 0.5rem;
   }
+
+  .body-about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .body-about > footer {
+    margin-top: auto;
+  }
 }
+
 
 .pagination {
   padding-top: 10px;
@@ -777,6 +815,53 @@ body.tema-rojo footer .autores {
     gap: 10px;
     width: 100%;
   }
+
+.body-about {
+  background-image: url(img/Background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.body-about.tema-rojo {
+  background-image: url(img/Background_red.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #DD092F;
+}
+
+.about-api{
+  width: 100%;      
+  height: auto;    
+  display: block;    
+  overflow: visible;
+  border-radius: 40px;
+}
+
+.sec-about-api .about-api {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center;
+  gap: 20px;
+}
+.sec-about-api .about-api .elm {
+  position: static !important;
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.sec-about-api .parafos {
+  width: 90%;
+  padding: 10px;
+}
+.sec-about-api .parafos h1 {
+  font-size: 1.5rem;
+}
+.sec-about-api .parafos p,
+.sec-about-api .parafos h3 {
+  font-size: 1rem;
+}
 }
 
 @media (min-width: 1001px) and (max-width: 1230px) {
@@ -855,6 +940,53 @@ body.tema-rojo footer .autores {
     gap: 55px;
     width: 100%;
   }
+.about-api {
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 250px;
+  }
+
+.body-about {
+  background-image: url(img/Background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+.body-about.tema-rojo {
+  background-image: url(img/Background_red.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #DD092F;
+}
+
+.elm {
+  width: auto;
+  height: auto;
+  max-height: 550px;
+  padding-left: 300px;
+}
+
+.parafos {
+  width: 60%;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.title-api {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.parafos h3 {
+  font-size: 22px;
+}
+.parafos p {
+  line-height: 1.6;
+}
+
 }
 
 .tema-rojo .container_token {
@@ -1327,6 +1459,61 @@ body.dark {
     background-color: rgba(238, 240, 244, 0.7);
     backdrop-filter: blur(4px);
   }
+  
+.base-about {
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.body-about {
+background-image: url(img/Background.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.body-about.tema-rojo {
+  background-image: url(img/Background_red.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #DD092F;
+}
+
+.about-api {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.elm {
+  width: 70%;
+  height: auto;
+  margin: 0 auto 20px auto;
+}
+
+.parafos {
+  padding: 0;
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+}
+
+.title-api {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+  .body-about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .body-about > footer {
+    margin-top: auto;
+  }
+
 }
 
 .modal.hidden {
@@ -1356,3 +1543,4 @@ body.dark {
   cursor: pointer;
   font-size: 28px;
 }
+
