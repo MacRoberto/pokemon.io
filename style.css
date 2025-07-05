@@ -19,6 +19,13 @@ body {
 background-image: url(img/Background.png);
 background-size: cover;
 background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+.body-about > footer {
+  margin-top: auto;
 }
 
 .body-about.tema-rojo {
@@ -26,6 +33,13 @@ background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #DD092F;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-about.tema-rojo > footer {
+  margin-top: auto;
 }
 
 body.tema-rojo {
@@ -486,7 +500,17 @@ nav.hidden {
     padding: 0.3rem 0.5rem;
   }
 
+  .body-about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .body-about > footer {
+    margin-top: auto;
+  }
 }
+
 
 .pagination {
   padding-top: 10px;
@@ -1480,6 +1504,16 @@ background-repeat: no-repeat;
   margin-bottom: 10px;
 }
 
+  .body-about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .body-about > footer {
+    margin-top: auto;
+  }
+
 }
 
 .modal.hidden {
@@ -1509,3 +1543,4 @@ background-repeat: no-repeat;
   cursor: pointer;
   font-size: 28px;
 }
+
