@@ -664,9 +664,7 @@ body.tema-rojo footer .autores {
   text-align: center;
   line-height: 40px;
 }
-.pokemon-review {
-  margin-left: -30px;
-}
+
 
 .container_token {
   display: flex;
@@ -988,6 +986,7 @@ body.tema-rojo footer .autores {
   width: 60%;
   font-size: 17px;
   text-align: center;
+  padding-right: 10px;
 }
 
 .parafos {
@@ -1546,6 +1545,9 @@ background-repeat: no-repeat;
     margin-top: auto;
   }
 
+.parafo-pokemon {
+  font-size: 16px;
+  text-align: center;
 }
 
 .modal.hidden {
