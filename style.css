@@ -122,7 +122,7 @@ nav.hidden {
 }
 .search {
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 73px;
   width: 1007px;
   margin-right: 16px;
@@ -142,9 +142,15 @@ nav.hidden {
   display: flex;
   justify-content: center;
   background: #ff5350;
-  border-radius: 10px;
-  width: 81px;
+  border-radius: 50%;
+  width: 73px;
   height: 73px;
+  margin-left: 6px;
+  box-shadow: 0 2px 8px 1px #222c, 0 0 0 2px #fff, 0 4px 12px 0 rgba(34,34,34,0.18);
+  transition: box-shadow 0.2s;
+}
+.btn_red:hover {
+  box-shadow: 0 4px 16px 2px #222e, 0 0 0 3px #fff, 0 6px 20px 0 rgba(34,34,34,0.22);
 }
 .btn_red img {
   margin-top: 16px;
@@ -1256,11 +1262,11 @@ body.tema-rojo footer .autores {
 
 #autocomplete-results {
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 0;
   width: 100%;
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   border-top: none;
   border-radius: 0 0 10px 10px;
   max-height: 200px;
@@ -1271,6 +1277,13 @@ body.tema-rojo footer .autores {
   font-size: 16px;
   color: black;
   z-index: 999;
+}
+
+#autocomplete-results.active,
+#autocomplete-results.open,
+#autocomplete-results:focus-within,
+#autocomplete-results:not(:empty) {
+  border-color: #ccc;
 }
 
 #autocomplete-results li {
