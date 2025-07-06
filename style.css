@@ -1301,11 +1301,10 @@ body.dark {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   width: 60px;
   height: 300px;
   background-color: var(--bg-black50);
-  z-index: 2;
   right: 5px;
   top: 0;
   bottom: 50%;
@@ -1359,7 +1358,6 @@ body.dark {
 
 .menu .actionBar div h3 {
   width: calc(100% - 45px);
-  text-align: center;
 }
 
 .menu .optionsBar {
@@ -1423,20 +1421,31 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: justify-content 0.4s;
+}
+
+.menu.open .menuBreak {
+  justify-content: flex-start;
 }
 
 .menu .menuBreak hr {
-  width: 50%;
+  width: 60%;
   height: 3px;
   background-color: var(--bg-black100);
   border: none;
   border-radius: 5px;
+  transition: margin-left 0.4s;
+  margin-left: 0;
+}
+
+.menu.open .menuBreak hr {
+  margin-left: 14px;
 }
 
 .menu .themeBar {
   overflow: hidden;
   width: 200px;
-  height: 10%;
+  height: 30%;
   padding: 0.5rem;
 }
 
@@ -1549,6 +1558,7 @@ background-repeat: no-repeat;
   font-size: 16px;
   text-align: center;
 }
+}
 
 .modal.hidden {
   display: none;
@@ -1571,10 +1581,22 @@ background-repeat: no-repeat;
   line-height: 1.4;
 }
 .close {
-  position: absolute;
   top: 8px;
   right: 12px;
+  position: absolute;
   cursor: pointer;
   font-size: 28px;
+  width: 36px;
+  height: 36px;
+  background: #b4adad;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  border: none;
 }
-
+.close:hover {
+  background: #d32f2f;
+}
