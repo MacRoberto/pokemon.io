@@ -296,7 +296,7 @@ nav.hidden {
 }
 .type-poison {
   background: #a040a0;
-  color: #fff;
+  color: #fff !important;
 }
 .type-electric {
   background: #f8d030;
