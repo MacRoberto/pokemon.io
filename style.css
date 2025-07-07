@@ -1250,7 +1250,8 @@ body.tema-rojo footer .autores {
 .search-wrapper {
   display: flex;
   flex-direction: column;
-  width: 1007px;
+  width: 100%;
+  max-width: 1007px;
   position: relative;
 }
 
@@ -1278,6 +1279,23 @@ body.tema-rojo footer .autores {
   color: black;
   z-index: 999;
 }
+
+@media (max-width: 700px) {
+  #autocomplete-results {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1220px) {
+  #autocomplete-results {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+
+
 
 #autocomplete-results.active,
 #autocomplete-results.open,
