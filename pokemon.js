@@ -9,6 +9,8 @@ function toggleSubmenu() {
 const paramsString = window.location.search;
 const searchParams = new URLSearchParams(paramsString);
 const id = searchParams.get("id");
+const container = document.querySelector(".container_token");
+container.innerHTML = "<p class='loading'>Loading...</p>";
 
 fetch("https://pokeapi.co/api/v2/pokemon/" + id)
 .then(response => {
