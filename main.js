@@ -62,6 +62,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/?limit=30")
   .then((response) => response.json())
   .then((json) => {
     const pokemon_container = document.querySelector(".container-cards");
+    pokemon_container.innerHTML = "<p class='loading'>Loading...</p>";
 
     const typeClassMap = {
       grass: "type-grass",

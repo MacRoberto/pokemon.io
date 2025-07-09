@@ -156,6 +156,12 @@ nav.hidden {
   margin-top: 16px;
 }
 
+.loading {
+  height: 100vh;
+  font-size: 54px;
+  color: #000;
+}
+
 .container-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
