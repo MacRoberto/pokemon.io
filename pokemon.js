@@ -207,7 +207,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/" + id)
                 <a href="pokemon.html?id=${pokeId}">
                     <img src="${evo.img}" alt="${evo.name}" style="width: 100px;">
                 </a>
-                ${idx < evos.length - 1 ? `<span style="font-size: 32px;">&#8594;</span>` : ``}
+                ${idx < evos.length - 1 ? `<span class="arrow" style="font-size: 32px;">&#8594;</span>` : ``}
                 `;    
             }).join(``);
                 if (evolveBox) evolveBox.innerHTML = evoHTML;
