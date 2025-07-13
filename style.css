@@ -660,21 +660,24 @@ body.tema-rojo footer .autores {
 }
 .oak {
   padding: 0px 0px 0px 10px;
-  height: 370px;
+  height: 400px;
   width: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .title-pokemon {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 45px;
-  margin-top: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 50px;
 }
 .parafo-pokemon {
   font-size: 20px;
-  margin: 15px;
+  
   text-align: center;
-  line-height: 40px;
+  line-height: 35px;
+  margin: 0 15px 0 -20px;
 }
 
 
