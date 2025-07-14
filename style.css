@@ -456,7 +456,7 @@ nav.hidden {
   }
 
   #footer {
-    width: 102%;
+    width: 100%;
   }
 
   .autores p {
@@ -541,10 +541,6 @@ nav.hidden {
     margin-top: auto;
   }
 
-  .parafo-pokemon {
-    text-align: center;
-    padding-left: 50px;
-  }
 }
 
 .pagination {
@@ -1612,11 +1608,44 @@ body.dark {
   .body-about.tema-rojo > footer {
     margin-top: auto;
   }
+}
+
+@media (max-width: 767px){
 
   .parafo-pokemon {
     font-size: 16px;
     text-align: center;
+    margin: 0;
   }
+
+  .title-pokemon{
+    text-align: center;
+    margin-left: 0;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 1000px){
+
+  .parafo-pokemon {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .title-pokemon{
+    text-align: center;
+    margin-left: 0;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1000px){
+
+.base-about{
+  padding: 16px;
+}
+
 }
 
 .modal.hidden {
