@@ -16,12 +16,12 @@ body {
 }
 
 .body-about {
-background-image: url(img/Background.png);
-background-size: cover;
-background-repeat: no-repeat;
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+  background-image: url(img/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .body-about > footer {
@@ -32,7 +32,7 @@ min-height: 100vh;
   background-image: url(img/Background_red.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #DD092F;
+  background-color: #dd092f;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -146,11 +146,13 @@ nav.hidden {
   width: 73px;
   height: 73px;
   margin-left: 6px;
-  box-shadow: 0 2px 8px 1px #222c, 0 0 0 2px #fff, 0 4px 12px 0 rgba(34,34,34,0.18);
+  box-shadow: 0 2px 8px 1px #222c, 0 0 0 2px #fff,
+    0 4px 12px 0 rgba(34, 34, 34, 0.18);
   transition: box-shadow 0.2s;
 }
 .btn_red:hover {
-  box-shadow: 0 4px 16px 2px #222e, 0 0 0 3px #fff, 0 6px 20px 0 rgba(34,34,34,0.22);
+  box-shadow: 0 4px 16px 2px #222e, 0 0 0 3px #fff,
+    0 6px 20px 0 rgba(34, 34, 34, 0.22);
 }
 .btn_red img {
   margin-top: 16px;
@@ -454,7 +456,7 @@ nav.hidden {
   }
 
   #footer {
-    width: 102%;
+    width: 100%;
   }
 
   .autores p {
@@ -539,14 +541,7 @@ nav.hidden {
     margin-top: auto;
   }
 
-
-.parafo-pokemon{
-  text-align: center;
-  padding-left: 50px;
 }
-
-}
-
 
 .pagination {
   padding-top: 10px;
@@ -677,23 +672,24 @@ body.tema-rojo footer .autores {
 }
 .oak {
   padding: 0px 0px 0px 10px;
-  height: 370px;
+  height: 400px;
   width: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .title-pokemon {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 45px;
-  margin-top: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 50px;
 }
 .parafo-pokemon {
   font-size: 20px;
-  margin: 15px;
   text-align: center;
-  line-height: 40px;
+  line-height: 35px;
+  margin: 0 15px 0 -20px;
 }
-
 
 .container_token {
   display: flex;
@@ -854,52 +850,52 @@ body.tema-rojo footer .autores {
     width: 100%;
   }
 
-.body-about {
-  background-image: url(img/Background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+  .body-about {
+    background-image: url(img/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
-.body-about.tema-rojo {
-  background-image: url(img/Background_red.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #DD092F;
-}
+  .body-about.tema-rojo {
+    background-image: url(img/Background_red.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #dd092f;
+  }
 
-.about-api{
-  width: 100%;      
-  height: auto;    
-  display: block;    
-  overflow: visible;
-  border-radius: 40px;
-}
+  .about-api {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+    border-radius: 40px;
+  }
 
-.sec-about-api .about-api {
-  display: flex;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center;
-  gap: 20px;
-}
-.sec-about-api .about-api .elm {
-  position: static !important;
-  width: 160px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-.sec-about-api .parafos {
-  width: 90%;
-  padding: 10px;
-}
-.sec-about-api .parafos h1 {
-  font-size: 1.5rem;
-}
-.sec-about-api .parafos p,
-.sec-about-api .parafos h3 {
-  font-size: 1rem;
-}
+  .sec-about-api .about-api {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 20px;
+  }
+  .sec-about-api .about-api .elm {
+    position: static !important;
+    width: 160px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .sec-about-api .parafos {
+    width: 90%;
+    padding: 10px;
+  }
+  .sec-about-api .parafos h1 {
+    font-size: 1.5rem;
+  }
+  .sec-about-api .parafos p,
+  .sec-about-api .parafos h3 {
+    font-size: 1rem;
+  }
 }
 
 @media (min-width: 1001px) and (max-width: 1230px) {
@@ -982,7 +978,7 @@ body.tema-rojo footer .autores {
     gap: 55px;
     width: 100%;
   }
-.about-api {
+  .about-api {
     width: 90%;
     height: auto;
     flex-direction: row;
@@ -992,57 +988,56 @@ body.tema-rojo footer .autores {
     border-radius: 250px;
   }
 
-.body-about {
-  background-image: url(img/Background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  .body-about {
+    background-image: url(img/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
-.body-about.tema-rojo {
-  background-image: url(img/Background_red.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #DD092F;
-}
+  .body-about.tema-rojo {
+    background-image: url(img/Background_red.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #dd092f;
+  }
 
-.elm {
-  width: auto;
-  height: auto;
-  max-height: 550px;
-  padding-left: 300px;
-}
+  .elm {
+    width: auto;
+    height: auto;
+    max-height: 550px;
+    padding-left: 300px;
+  }
 
-.oak{
-  width: auto;
-  height: auto;
-  max-height: 500px;
-  padding-left: 50px;
-}
+  .oak {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    padding-left: 50px;
+  }
 
-.parafo-pokemon{
-  width: 60%;
-  font-size: 17px;
-  text-align: center;
-  padding-right: 10px;
-}
+  .parafo-pokemon {
+    width: 60%;
+    font-size: 17px;
+    text-align: center;
+    padding-right: 10px;
+  }
 
-.parafos {
-  width: 60%;
-  font-size: 17px;
-  padding-left: 20px;
-}
+  .parafos {
+    width: 60%;
+    font-size: 17px;
+    padding-left: 20px;
+  }
 
-.title-api {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-.parafos h3 {
-  font-size: 22px;
-}
-.parafos p {
-  line-height: 1.6;
-}
-
+  .title-api {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .parafos h3 {
+    font-size: 22px;
+  }
+  .parafos p {
+    line-height: 1.6;
+  }
 }
 
 .tema-rojo .container_token {
@@ -1325,9 +1320,6 @@ body.tema-rojo footer .autores {
   }
 }
 
-
-
-
 #autocomplete-results.active,
 #autocomplete-results.open,
 #autocomplete-results:focus-within,
@@ -1455,7 +1447,6 @@ body.dark {
 
 .menu .optionsBar .menuItem .menuOption:hover {
   background-color: rgb(132, 0, 255);
-  
 }
 .menu .optionsBar .menuItem .menuOption i {
   width: 45px;
@@ -1526,9 +1517,9 @@ body.dark {
   background-color: transparent;
   outline: none;
   border: none;
-  border-radius: 30%; 
+  border-radius: 30%;
   color: var(--bg-black100);
-  width: 25px; 
+  width: 25px;
   height: 30px;
   transition: 0.3s ease;
   font-size: 1rem;
@@ -1538,8 +1529,8 @@ body.dark {
 }
 
 .menu.open .themeBar div button {
-  width: 200px; 
-  border-radius: .5rem; 
+  width: 200px;
+  border-radius: 0.5rem;
 }
 
 .menu .themeBar div button:hover {
@@ -1554,23 +1545,22 @@ body.dark {
 }
 
 @media (max-width: 768px) {
-  
   .base-about {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
   .body-about {
-  background-image: url(img/Background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-image: url(img/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .body-about.tema-rojo {
     background-image: url(img/Background_red.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #DD092F;
+    background-color: #dd092f;
   }
 
   .about-api {
@@ -1586,7 +1576,6 @@ body.dark {
     height: auto;
     margin: 0 auto 20px auto;
   }
-
 
   .oak {
     width: 50%;
@@ -1616,15 +1605,47 @@ body.dark {
     margin-top: auto;
   }
 
-
   .body-about.tema-rojo > footer {
     margin-top: auto;
   }
+}
+
+@media (max-width: 767px){
 
   .parafo-pokemon {
     font-size: 16px;
     text-align: center;
+    margin: 0;
   }
+
+  .title-pokemon{
+    text-align: center;
+    margin-left: 0;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 1000px){
+
+  .parafo-pokemon {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .title-pokemon{
+    text-align: center;
+    margin-left: 0;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1000px){
+
+.base-about{
+  padding: 16px;
+}
+
 }
 
 .modal.hidden {
@@ -1633,8 +1654,8 @@ body.dark {
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45); 
-  backdrop-filter: blur(6px); 
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
