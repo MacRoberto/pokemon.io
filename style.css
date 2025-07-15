@@ -164,6 +164,112 @@ nav.hidden {
   color: #000;
 }
 
+.container-loading {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
+  margin: auto;
+  margin-top: 58px;
+  row-gap: 15px;
+  text-transform: uppercase;
+  align-content: space-between;
+  justify-items: center;
+}
+
+.container-loading .flexbox {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-loading .mainbox {
+    align-items: center;
+    justify-content: center;
+    height: 235px;
+    gap: 40px;
+}
+
+.container-loading .container {
+    width: 350px;
+    height: 235px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tema-rojo .container-loading .container {
+    background-color: #77b35b;
+}
+
+.container-loading .b1,.mrow,.bcol{
+       overflow: hidden;
+}
+
+.container-loading .b1 {
+    height: 100px;
+    width: 245px;
+    background-color: #d9d9d9;
+    border-radius:5px; 
+    margin-top: 15px;
+}
+
+.tema-rojo .container-loading .b1 {
+    background-color: #ffff;
+}
+
+.container-loading .b2 {
+    flex-direction: column;
+  gap:10px;
+}
+
+.container-loading .mrow {
+    height: 10px;
+    width: 245px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+}
+
+.tema-rojo .container-loading .mrow {
+    background-color: #ffff;
+}
+
+.container-loading .b3{
+  gap:10px;
+}
+
+.container-loading .bcol {
+    height: 25px;
+    width: 114px;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+}
+
+.tema-rojo .container-loading .bcol {
+    background-color: #ffff;
+}
+
+.container-loading .shadow{
+    height: 100px;
+    width: 20px;
+    background-color: #fff;
+    filter: blur(10px);
+    margin-left: 240px;
+    animation: anim 1s  ease-out infinite ;
+    transform: rotate(45deg);
+}
+
+.tema-rojo .container-loading .shadow {
+    background-color: #d9d9d9;
+}
+
+@keyframes anim{
+    0%{transform: translate(-200px);}
+}
+
 .container-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -440,6 +546,13 @@ nav.hidden {
     height: 100%;
   }
 
+  .container-loading {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
   .pagination {
     flex-wrap: wrap;
     gap: 0.3rem;
@@ -512,7 +625,20 @@ nav.hidden {
     height: 100%;
   }
 
+  .container-loading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
   .card.last-card {
+    grid-column: 1 / 3;
+    justify-self: center;
+  }
+
+  .last-card-loader {
     grid-column: 1 / 3;
     justify-self: center;
   }
