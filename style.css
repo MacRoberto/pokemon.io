@@ -159,9 +159,16 @@ nav.hidden {
 }
 
 .loading {
+  margin: 0 auto;
+  margin-top: 300px;
   height: 100vh;
   font-size: 54px;
   color: #000;
+  font-weight: bold;
+}
+
+.tema-rojo .loading {
+  color: #fff;
 }
 
 .container-loading {
