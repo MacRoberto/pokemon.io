@@ -6,6 +6,54 @@ function toggleSubmenu() {
   document.getElementById("appearanceOptions").classList.toggle("hidden");
 }
 
+function showLoader(count = 9) {
+  const loader = document.getElementById("loader");
+  const cards = document.querySelector(".container-cards");
+
+  loader.innerHTML = "";
+  loader.style.display = "grid";
+  cards.style.display = "none";
+  
+  for (let i = 0; i < count; i++) {
+    const mainbox = document.createElement("div");
+    mainbox.className = "mainbox flexbox";
+    mainbox.innerHTML = ` 
+          <div class="container flexbox">
+            <div class="box b1 flexbox">
+              <div class="shadow"></div>
+            </div>
+
+            <div class="box b2 flexbox">
+              <div class="mrow"> <div class="shadow"></div></div>
+              <div class="mrow"> <div class="shadow"></div></div>
+              <div class="mrow"> <div class="shadow"></div></div>
+            </div>
+
+            <div class="box b3 flexbox">
+              <div class="bcol"> <div class="shadow"></div></div>
+              <div class="bcol"> <div class="shadow"></div></div>
+            </div>
+
+          </div>
+    `;
+    loader.appendChild(mainbox);
+  }
+
+  const allLoaders = loader.querySelectorAll (".mainbox");
+  console.log("Loaders totales:", allLoaders.length);
+
+  if (allLoaders.length % 2 !== 0) {
+    const lastLoader = allLoaders[allLoaders.length - 1];
+    lastLoader.classList.add("last-card-loader");
+    console.log("Ultimo loader centrado", lastLoader);
+  }
+}
+
+function hideLoader() {
+  document.getElementById("loader").style.display = "none";
+  document.querySelector(".container-cards").style.display = "grid";
+}
+
 const menuBtn = document.getElementById('menuBtn');
 const menu = document.getElementById('menu');
 const menuText = document.querySelectorAll('.menuText');
@@ -62,7 +110,6 @@ fetch("https://pokeapi.co/api/v2/pokemon/?limit=30")
   .then((response) => response.json())
   .then((json) => {
     const pokemon_container = document.querySelector(".container-cards");
-    pokemon_container.innerHTML = "<p class='loading'>Loading...</p>";
 
     const typeClassMap = {
       grass: "type-grass",
@@ -162,6 +209,8 @@ renderPage(currentPage);
 buildPaginator(currentPage);
 
 async function renderPage(page) {
+  showLoader();
+
   currentPage = page;
 
   const offset = (page - 1) * CARDS_PER_PAGE;
@@ -246,6 +295,8 @@ async function renderPage(page) {
     const cls = typeClassMap[h2.textContent.toLowerCase()];
     if (cls) h2.classList.add(cls);
   });
+
+  hideLoader();
 }
 
 function buildPaginator(page) {
